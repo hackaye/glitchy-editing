@@ -56,6 +56,13 @@
               "tooltip": "Tidy up your code"
             },
             {
+              "name": "🪗 Wrap",
+              "singleInstance": true,
+              "useVsCodeApi": true,
+              "command": "editor.action.toggleWordWrap",
+              "tooltip": "Toggle word wrap"
+            },
+            {
               "name": "💻 Terminal",
               "singleInstance": true,
               "useVsCodeApi": true,

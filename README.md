@@ -18,6 +18,6 @@ You may need to tweak the scripts to suit your project – the defaults are desi
 * Specify the ESLint and VSCode Action Buttons Ext extensions
 * Hide some files and folders to make the file tree a bit less cluttered
 * Hide the minimap and chat prompts
-* Specify buttons for prettifying, opening the terminal, splitting tabs to show the preview side by side with the code, and sharing your preview link
+* Specify buttons for prettifying, wrapping text, opening the terminal, splitting tabs to show the preview side by side with the code, and sharing your preview link
 
 The project contains an example Vite website but you can just delete `index.html` and `vite.config.js` if you're using something else – make sure you also update the `package.json` to suit your chosen framework.

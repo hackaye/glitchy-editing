@@ -2,7 +2,7 @@
 
 A devcontainer config to create an editing experience that's a bit like Glitch in a GitHub Codespace.
 
-![editor](https://github.com/user-attachments/assets/d6f2f5f0-eb7f-4b54-aefe-6d69e5eaaaf3)
+![editor](https://github.com/user-attachments/assets/efaf9235-9fe8-4772-99c6-aad399c206d0)
 
 Configs are in the devcontainer and helper directories:
 

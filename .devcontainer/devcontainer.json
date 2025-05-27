@@ -26,7 +26,8 @@
   "postAttachCommand": {
     "guide": "bash _helpers/welcome.sh",
     "start": "npm run start",
-    "build": "npm run build"
+    "build": "npm run build",
+    "serve": "npm run serve"
   },
   "waitFor": "updateContentCommand",
   "customizations": {

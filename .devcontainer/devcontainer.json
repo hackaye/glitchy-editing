@@ -1,0 +1,82 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+
+{
+  "name": "Ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/base:noble",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "portsAttributes": {
+    "3000-3010": {
+      "label": "Site",
+      "onAutoForward": "openPreview"
+    },
+    "5173-5180": {
+      "label": "Site",
+      "onAutoForward": "openPreview"
+    },
+    "8080-8090": {
+      "label": "Site",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "updateContentCommand": "npm install",
+  "postAttachCommand": {
+    "guide": "bash _helpers/welcome.sh",
+    "start": "npm run start",
+    "build": "npm run build"
+  },
+  "waitFor": "updateContentCommand",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "jkearins.action-buttons-ext@0.1.1",
+        "dbaeumer.vscode-eslint"
+      ],
+      "settings": {
+        "files.exclude": {
+          "package-lock.json": true,
+          ".gitignore": true,
+          "node_modules/": true
+        },
+        "chat.sendElementsToChat.enabled": false,
+        "editor.minimap.enabled": false,
+        "actionButtons": {
+          "commands": [
+            {
+              "name": "🌈 Prettify",
+              "singleInstance": true,
+              "useVsCodeApi": true,
+              "command": "editor.action.formatDocument",
+              "tooltip": "Tidy up your code"
+            },
+            {
+              "name": "💻 Terminal",
+              "singleInstance": true,
+              "useVsCodeApi": true,
+              "command": "workbench.action.terminal.toggleTerminal",
+              "tooltip": "Open a terminal"
+            },
+            {
+              "name": "🔎 Split",
+              "singleInstance": true,
+              "useVsCodeApi": true,
+              "command": "workbench.action.moveEditorToNextGroup",
+              "tooltip": "Move your active tab to the side"
+            },
+            {
+              "name": "🔗 Share",
+              "singleInstance": true,
+              "command": "bash _helpers/share.sh",
+              "tooltip": "Grab a link to share your draft site"
+            }
+          ],
+          "defaultColor": "none",
+          "reloadButton": null
+        }
+      }
+    }
+  }
+}

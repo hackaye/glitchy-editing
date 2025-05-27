@@ -2,7 +2,7 @@
 
 A devcontainer config to create an editing experience that's a bit like Glitch in a GitHub Codespace.
 
-[pic to follow]
+![editor](https://github.com/user-attachments/assets/5d2c2d09-95c2-48d7-b84a-b532b32be844)
 
 Configs are in the devcontainer and helper directories:
 
@@ -20,4 +20,4 @@ You may need to tweak the scripts to suit your project – the defaults are desi
 * Hide the minimap and chat prompts
 * Specify buttons for prettifying, opening the terminal, splitting tabs to show the preview side by side with the code, and sharing your preview link
 
-Change it to suit yourself!
+The project contains an example Vite website but you can just delete `index.html` and `vite.config.js` if you're using something else – make sure you also update the `package.json` to suit your chosen framework.

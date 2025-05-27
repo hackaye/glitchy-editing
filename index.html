@@ -7,77 +7,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
+    :root {
+      --wrapper-height: 100vh;
+      --font-family: sans-serif;
+      --font-family-list: monospace;
+      --color-bg: #facae9;
+      --color-bg-alt: #15d8d5;
+      --color-text-main: #991c00;
+      --color-primary: #4c00ff;
+      --color-highlight: #e2fa0a;
+    }
 
-    /* A set of default styles */
-:root {
-  /* Generic sizing for the page */
-  --wrapper-height: 100vh;
+    * {
+      box-sizing: border-box;
+    }
 
-  /* Fonts for different elements */
-  --font-family: sans-serif;
-  --font-family-list: monospace;
+    [hidden] {
+      display: none !important;
+    }
 
-  /* Colors you'll see cascade through the elements */
-  --color-bg: #99ddff; /* Used for the page body background */
-  --color-bg-alt: #33b1ff; /* Used for social icons on hover */
-  --color-text-main: #004099; /* List text ann social icons on hover */
-  --color-primary: #006aff; /* Headers and borders */
-  --color-highlight: #e7f7fe; /* Highlights */
-}
+    body {
+      font-family: var(--font-family);
+      background-color: var(--color-bg);
+      text-align: center;
+      margin: 0;
+      font-size: large;
+    }
 
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}
+    .wrapper {
+      min-height: var(--wrapper-height);
+      display: grid;
+      place-items: center;
+      margin: 0;
+      padding: 1rem 2rem;
+    }
 
-/* Page structure */
-body {
-  font-family: var(--font-family);
-  background-color: var(--color-bg);
-  text-align: center;
-  margin: 0;
-  font-size:large;
-}
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0;
-  padding:1rem 2rem;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem auto 0;
-  padding: 1.5rem 0 0.5rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: flex-end;
-}
-a.remix {
-  background: var(--color-bg-alt);
-  color:var(--color-highlight);
-  border: 2px solid var(--color-highlight);
-  border-radius: 5px;
-  padding:0.5rem;
-  font-weight:bold;
-}
-a.remix:hover {
-  background: var(--color-primary);
-  color:var(--color-highlight);
-}
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    p {
+      color: var(--color-text-main);
+    }
+
+    h1 {
+      display: inline-flex;
+      color: var(--color-primary);
+      justify-content: center;
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      border-bottom: 2px solid var(--color-primary);
+      color: var(--color-primary);
+      transition: background 0.2s linear;
+      font-weight: bold;
+    }
+
+    a:hover,
+    a:active,
+    a:focus {
+      background: var(--color-primary);
+      color: var(--color-highlight);
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem auto 0;
+      padding: 1.5rem 0 0.5rem 0;
+      width: 100%;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    a.remix {
+      background: var(--color-bg-alt);
+      color: var(--color-highlight);
+      border: 2px solid var(--color-highlight);
+      border-radius: 5px;
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+
+    a.remix:hover {
+      background: var(--color-primary);
+      color: var(--color-highlight);
+    }
   </style>
   <title>Hello World!</title>
 </head>
@@ -94,7 +115,7 @@ a.remix:hover {
 
       <footer class="footer">
         <div>
-          <a class="remix" href="https://github.com/glitchdotcom/glitchy-editing">🎏 Remix your own site</a>
+          <a class="remix" href="https://github.com/suesmith/glitchy-editing">🎏 Remix your own site</a>
         </div>
       </footer>
     </div>

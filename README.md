@@ -46,7 +46,7 @@ You may need to tweak the scripts to suit your project – the defaults are desi
 * Specify the buttons to include at the bottom
 * _TODO: Add publish button to deploy to your chosen platform_
 
-The project contains an example Vite website but you can just delete `index.html`, `style.css`, and `vite.config.js` if you're using something else – make sure you also update the `package.json` to suit your chosen framework.
+The project contains an example Vite website but you can just delete the files and add your own – make sure you also update the `package.json` to suit your chosen framework.
 
 The buttons along the bottom of the editor are configured courtesy of this great extension: [VSCode Action Buttons Ext](https://marketplace.visualstudio.com/items?itemName=jkearins.action-buttons-ext) 🙌
 

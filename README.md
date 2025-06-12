@@ -75,6 +75,8 @@ GitHub will keep the edits you make in the codespace only for a limited time, so
 > 
 > <img alt="export to branch" width="500px" src="https://github.com/user-attachments/assets/c7815347-3e5a-4e34-97f2-db58343acaa4"/>
 
+> 🤑 You will likely be asked for a credit card at some point to continue using Codespaces – _I believe_ you can enter one but set the spending limit to zero to keep your usage within the free tier.
+
 ## Make this better!
 
 📣 Feel free to open Issues and Pull Requests on this repo or @ me on [Mastodon](https://glasgow.social/@sue) or [Bluesky](https://bsky.app/profile/suesmith.lol)

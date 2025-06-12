@@ -67,7 +67,7 @@ The default project contents will dump your website files in `docs/` when you ru
 
 ## Save your edits to GitHub
 
-GitHub will keep the edits you make in the codespace only for a limited time, so it's a good idea to commit your work to a repo regularly. Use the **Source Control** button on the left of the editor – you can make commits, open and merge pull requests right inside the codespace. 
+GitHub will keep the edits you make in the codespace only for a limited time, so it's a good idea to commit your work to a repo regularly. Use the **Source Control** button on the left of the editor – if you aren't bothered about branching etc just enter a commit message, commit, confirm, then click the sync button. 
 
 <img alt="source control" src="https://github.com/user-attachments/assets/a5160b08-4f80-4a5f-af76-bde18a43427d" width="300px"/>
 

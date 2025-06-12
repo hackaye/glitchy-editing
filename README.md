@@ -77,6 +77,10 @@ GitHub will keep the edits you make in the codespace only for a limited time, so
 
 > 🤑 You will likely be asked for a credit card at some point to continue using Codespaces – _I believe_ you can enter one but set the spending limit to zero to keep your usage within the free tier.
 
-## Make this better!
+## What do you think?
+
+I made this to ease the pain of not being able to use the Glitch editor anymore, but of course it is not Glitch. 😭 
+
+> There are lots of amazing new platforms but for me none of them quite capture what made Glitch so special and why I gravitated towards it so much, especially for education purposes. I'm hopeful we will see such a thing again and am thinking a lot about what that might look like.. What do you think?
 
 📣 Feel free to open Issues and Pull Requests on this repo or @ me on [Mastodon](https://glasgow.social/@sue) or [Bluesky](https://bsky.app/profile/suesmith.lol)

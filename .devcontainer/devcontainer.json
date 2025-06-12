@@ -86,6 +86,12 @@
               "singleInstance": true,
               "command": "bash _helpers/share.sh",
               "tooltip": "Grab a link to share your draft site"
+            },
+            {
+              "name": "🚧 Build",
+              "singleInstance": true,
+              "command": "bash _helpers/build.sh",
+              "tooltip": "Build your site for deployment"
             }
           ],
           "defaultColor": "none",

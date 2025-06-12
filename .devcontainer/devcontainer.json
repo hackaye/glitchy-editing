@@ -76,6 +76,12 @@
               "tooltip": "Move your active tab to the side"
             },
             {
+              "name": "🎡 Run",
+              "singleInstance": true,
+              "command": "bash _helpers/run.sh",
+              "tooltip": "Build and run your site"
+            },
+            {
               "name": "🔗 Share",
               "singleInstance": true,
               "command": "bash _helpers/share.sh",

@@ -41,7 +41,6 @@
       "settings": {
         "files.exclude": {
           "package-lock.json": true,
-          ".gitignore": true,
           "node_modules/": true
         },
         "chat.sendElementsToChat.enabled": false,

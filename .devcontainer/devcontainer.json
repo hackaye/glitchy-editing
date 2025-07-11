@@ -1,6 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
-
 {
   "name": "Ubuntu",
   "image": "mcr.microsoft.com/devcontainers/base:noble",
@@ -24,15 +23,27 @@
     "vscode": {
       "extensions": [
         "jkearins.action-buttons-ext@0.1.1",
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "ritwickdey.LiveServer"
       ],
       "settings": {
+        "tasks": {
+          "version": "2.0.0",
+          "tasks": [
+            {
+              "label": "open",
+              "command": "${command:extension.liveServer.goOnline}"
+            }
+          ]
+        },
         "files.exclude": {
           "package-lock.json": true,
           "node_modules/": true
         },
         "chat.sendElementsToChat.enabled": false,
         "editor.minimap.enabled": false,
+        "liveServer.settings.NoBrowser": true,
+      	"liveServer.settings.donotShowInfoMsg": true,
         "actionButtons": {
           "commands": [
             {
@@ -68,6 +79,16 @@
               "singleInstance": true,
               "command": "bash _helpers/run.sh",
               "tooltip": "Build and run your site"
+            },
+            {
+              "name": "🏠 Open",
+              "singleInstance": true,
+              "useVsCodeApi": true,
+              "command": "workbench.action.tasks.runTask",
+              "args": [
+                "open"
+              ],
+              "tooltip": "Open your site"
             },
             {
               "name": "🔗 Share",

@@ -9,7 +9,8 @@ export default defineConfig(async ({ command, mode }) => {
           main: 'index.html'
         },
       },
-      outDir: "docs"
-    }
+      outDir: "dist"
+    },
+    base: "/glitchy-editing/"
   }
 });
